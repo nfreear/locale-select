@@ -38,6 +38,10 @@ export default [
     label: 'فارسی',
     labelEn: 'Persian/Farsi'
   }, {
+    id: 'fi',
+    label: 'Suomi',
+    labelEn: 'Finnish'
+  }, {
     id: 'fr',
     label: 'Francais',
     labelEn: 'French'
@@ -46,13 +50,69 @@ export default [
     label: 'हिंदी',
     labelEn: 'Hindi'
   }, {
+    id: 'hu',
+    label: 'Magyar',
+    labelEn: 'Hungarian'
+  }, {
+    id: 'id',
+    label: 'bahasa Indonesia',
+    labelEn: 'Indonesian'
+  }, {
+    id: 'it',
+    label: 'Italiano',
+    labelEn: 'Italian'
+  }, {
+    id: 'ja',
+    label: '日本語', // Nihongo
+    labelEn: 'Japanese'
+  }, {
+    id: 'ko',
+    label: '한국어', // "Hangugeo" (South Korea)
+    labelEn: 'Korean'
+  }, {
+    id: 'ky',
+    label: 'Кыргыз тили',
+    labelEn: 'Kyrgyz'
+  }, {
+    id: 'nl',
+    label: 'Nederlands',
+    labelEn: 'Dutch'
+  }, {
+    id: 'no',
+    label: 'norsk',
+    labelEn: 'Norwegian'
+  }, {
+    id: 'pl',
+    label: 'polski',
+    labelEn: 'Polish'
+  }, {
+    id: 'pt_br',
+    label: 'português (Brazil)',
+    labelEn: 'Portugese'
+  }, {
+    id: 'pt_pt',
+    label: 'português (Portuguesa)',
+    labelEn: 'Portugese'
+  }, {
+    id: 'ro',
+    label: 'limba română',
+    labelEn: 'Romanian'
+  }, {
     id: 'ru',
     label: 'Русский',
     labelEn: 'Russian'
   }, {
+    id: 'sv',
+    label: 'svenska',
+    labelEn: 'Swedish'
+  }, {
     id: 'sw',
     label: 'Kiswahili',
     labelEn: 'Swahili'
+  }, {
+    id: 'tr',
+    label: 'Türkçe',
+    labelEn: 'Turkish'
   }, {
     id: 'uk',
     label: 'Українська',
