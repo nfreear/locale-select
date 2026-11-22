@@ -1,0 +1,7 @@
+{
+  "name": "locale-select",
+  "type": "module",
+  "exports": {
+    ".": "./src/LocaleSwitchElement.js"
+  }
+}
