@@ -1,0 +1,25 @@
+:dir(rtl),
+/* [ dir = rtl ], */
+.leaflet-dir-rtl {
+  .leaflet-right {
+    right: auto;
+    left: 0;
+
+    .leaflet-control {
+      float: left;
+    	margin-right: 0;
+      margin-left: 10px;
+    }
+  }
+
+  .leaflet-left {
+    left: auto;
+    right: 0;
+
+    .leaflet-control {
+      float: right;
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+}

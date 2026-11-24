@@ -6,9 +6,9 @@
 export default [
   {
     id: 'ar',
-    dir: 'rtl',
     label: 'اَلْعَرَبِيَّةُة',
-    labelEn: 'Arabic'
+    labelEn: 'Arabic',
+    dir: 'rtl'
   }, {
     id: 'cz',
     label: 'čeština',
@@ -35,9 +35,9 @@ export default [
     labelEn: 'Spanish'
   }, {
     id: 'fa',
-    dir: 'rtl',
     label: 'فارسی',
-    labelEn: 'Persian/Farsi'
+    labelEn: 'Persian/Farsi',
+    dir: 'rtl'
   }, {
     id: 'fi',
     label: 'Suomi',
@@ -120,9 +120,9 @@ export default [
     labelEn: 'Ukrainian'
   }, {
     id: 'ur', // Pakistan (+India)
-    dir: 'rtl',
     label: 'اُردُو',
-    labelEn: 'Urdu'
+    labelEn: 'Urdu',
+    dir: 'rtl'
   }, {
     id: 'zh', // China (PRC), Singapore.
     lang: 'zh-Hans',
