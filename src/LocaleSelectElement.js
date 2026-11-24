@@ -4,6 +4,10 @@ const { HTMLElement } = window;
 
 /**
  * Custom element to display a list of language options for a Leaflet map.
+ *
+ * @customElement locale-select
+ * @copyright 2026 Nick Freear
+ * @license MIT
  */
 export default class LocaleSelectElement extends HTMLElement {
   #defaultLabel = 'Choose language';
@@ -12,7 +16,8 @@ export default class LocaleSelectElement extends HTMLElement {
   get #queryParam () { return this.getAttribute('query-param') ?? 'locale'; }
   get #path () { return this.getAttribute('path') ?? ''; }
 
-  #localeUrl (localeId) { return `${this.#path}?${this.#queryParam}=${localeId}`; }
+  #dir (dir) { return dir ? `&dir=${dir}` : ''; }
+  #localeUrl (locale, dir) { return `${this.#path}?${this.#queryParam}=${locale}${this.#dir(dir)}`; }
 
   constructor () {
     super();
@@ -26,7 +31,7 @@ export default class LocaleSelectElement extends HTMLElement {
   }
 
   #createListItem (locale) {
-    const { id, label, labelEn } = locale;
+    const { id, dir, label, labelEn } = locale;
     const listItem = document.createElement('li');
     const anchor = document.createElement('a');
     const small = document.createElement('small');
@@ -36,7 +41,7 @@ export default class LocaleSelectElement extends HTMLElement {
     small.setAttribute('lang', 'en');
     span.textContent = `${label} `;
     span.setAttribute('lang', id.replace('_', '-'));
-    anchor.href = this.#localeUrl(id);
+    anchor.href = this.#localeUrl(id, dir);
     anchor.appendChild(span);
     anchor.appendChild(small);
     listItem.appendChild(anchor);

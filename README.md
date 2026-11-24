@@ -1,5 +1,5 @@
 
-# locale-select
+# `<locale-select>`
 
 Custom element to display a list of language options for a Leaflet map.
 

@@ -1,5 +1,4 @@
 /**
- * Incomplete!
  * List needs to be in sync with the "locales" folder for the "Leaflet.Translations" plugin.
  *
  * @see https://github.com/Leaflet/Leaflet.Translations
@@ -7,6 +6,7 @@
 export default [
   {
     id: 'ar',
+    dir: 'rtl',
     label: 'اَلْعَرَبِيَّةُة',
     labelEn: 'Arabic'
   }, {
@@ -35,6 +35,7 @@ export default [
     labelEn: 'Spanish'
   }, {
     id: 'fa',
+    dir: 'rtl',
     label: 'فارسی',
     labelEn: 'Persian/Farsi'
   }, {
@@ -118,12 +119,17 @@ export default [
     label: 'Українська',
     labelEn: 'Ukrainian'
   }, {
-    id: 'zh',
+    id: 'ur', // Pakistan (+India)
+    dir: 'rtl',
+    label: 'اُردُو',
+    labelEn: 'Urdu'
+  }, {
+    id: 'zh', // China (PRC), Singapore.
     lang: 'zh-Hans',
     label: '简体中文',
     labelEn: 'Simplified Chinese'
   }, {
-    id: 'zh_tw',
+    id: 'zh_tw', // Hong Kong, Taiwan.
     lang: 'zh-Hant',
     label: '繁體中文',
     labelEn: 'Traditional Chinese'
